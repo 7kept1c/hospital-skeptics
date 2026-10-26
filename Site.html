@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запись к терапевту</title>
+    <link rel="stylesheet" href="cartinki.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <span>Частная клиника · приём строго по записи</span>
+            <span>+6 (767) 676-76-76</span>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <div class="container header-inner">
+            <a href="Site.html" class="logo">
+                <img src="Logo.jpg" alt="Логотип" class="logo-icon">
+                <div class="logo-text">
+                    <strong>ZOMBOSS</strong>
+                    <span>D O C T O R</span>
+                </div>
+            </a>
+            
+            <nav class="main-nav">
+                <a href="#" onclick="toggleWorkText(); return false;">Место работы</a>
+                <a href="perexod.html">Направления</a>
+                <a href="assistenty.html">Ассистенты</a>
+                <a href="#" onclick="toggleContactText(); return false;">Контакты</a>
+            </nav>
+        </div>
+
+        <div id="workInfo" class="dropdown-info">
+            <div class="container">
+                <p>📍 <strong>Медцентр «Посмертный шанс»</strong> — г. Некрополь, ул. Реанимационная, 13</p>
+                <p>📍 <strong>Клинико-диагностический центр «Санаторий Вечность»</strong> — г. Моргоград, пер. Трансплантационный</p>
+            </div>
+        </div>
+
+        <div id="contactInfo" class="dropdown-info">
+            <div class="container">
+                <p>📞 <strong>Регистратура:</strong> <a href="tel:+79991112233">+9 (876) 543-21-00</a></p>
+                <p>📞 <strong>Справочная служба:</strong> <a href="tel:+79994445566">+1 (234) 567-89-01</a></p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <div class="hero-text">
+                <p class="subtitle">ЧАСТНАЯ КЛИНИКА</p>
+                <h1>Медицина, которой доверяют семьи</h1>
+                <p class="desc">Персональное наблюдение, современная диагностика и приём без очередей. Врач объясняет всё простым языком и ведёт вас на каждом этапе.</p>
+                <div class="buttons">
+                    <a href="anketa.html" class="btn-primary">Записаться на приём →</a>
+                    <a href="cartochka.html" class="btn-outline">Узнать о враче</a>
+                </div>
+            </div>
+
+            <div class="hero-image-block">
+                <div class="arch-frame">
+                    <img src="doctor.jpeg" alt="Врач" class="doctor-photo">
+                </div>
+                <div class="doctor-badge">
+                    <strong>Эдгар Джордж Зомбосс</strong>
+                    <span>Врач-терапевт</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature-item">
+                <img src="zapis.jpeg" alt="Иконка" class="feature-icon">
+                <span>Приём по записи</span>
+            </div>
+            <div class="feature-item">
+                <img src="plan.jpeg" alt="Иконка" class="feature-icon">
+                <span>Индивидуальный план</span>
+            </div>
+            <div class="feature-item">
+                <img src="diag.jpg" alt="Иконка" class="feature-icon">
+                <span>Современная диагностика</span>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+    </main>
+
+    <script>
+        function toggleWorkText() {
+            var workBlock = document.getElementById("workInfo");
+            var contactBlock = document.getElementById("contactInfo");
+            contactBlock.classList.remove("show");
+            workBlock.classList.toggle("show");
+        }
+
+        function toggleContactText() {
+            var contactBlock = document.getElementById("contactInfo");
+            var workBlock = document.getElementById("workInfo");
+            workBlock.classList.remove("show");
+            contactBlock.classList.toggle("show");
+
+
+}
+    </script>
+
+</body>
+</html>

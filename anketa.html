@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета к терапевту</title>
+    <link rel="stylesheet" href="cartinki.css">
+</head>
+<body>
+
+    <header class="booking-header">
+        <div class="container booking-header-inner">
+            <a href="Site.html" class="logo">
+                <img src="Logo.jpg" alt="Логотип" class="logo-icon">
+                <div class="logo-text">
+                    <strong>ZOMBOSS</strong>
+                    <span>D O C T O R</span>
+                </div>
+            </a>
+        </div>
+    </header>
+
+    <main class="container booking-main">
+        
+        <div class="booking-text">
+            <p class="subtitle">ОНЛАЙН-ЗАПИСЬ</p>
+            <h1>Запись на приём к врачу</h1>
+            <p class="desc">Заполните форму для записи на приём. Мы свяжемся с вами и подтвердим удобное время.</p>
+            
+            <div class="contact-info">
+                <span>📞 Телефон справочной службы: +6 (767) 676-76-77</span>
+            </div>
+        </div>
+
+        <div class="form-card">
+            <form action="#">
+                
+                <div class="form-group">
+                    <label for="name">Имя пациента</label>
+                    <input type="text" id="name" placeholder="Введите ваше имя">
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Дата рождения</label>
+                    <input type="date" id="date">
+                </div>
+
+                <div class="form-group">
+                    <label>Пол</label>
+                    <div class="custom-radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="gender" value="male" checked>
+                            <span class="custom-radio"></span>
+                            Мужской
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="gender" value="female">
+                            <span class="custom-radio"></span>
+                            Женский
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="doctor">Выберите врача</label>
+                    <select id="doctor">
+                        <option>Терапевт</option>
+                        <option>Кардиолог</option>
+                        <option>Офтальмолог</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="symptoms">Опишите ваши симптомы</label>
+                    <textarea id="symptoms" placeholder="Опишите ваши симптомы"></textarea>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox">
+                        <span class="custom-checkbox"></span>
+                        Согласен с обработкой данных
+                    </label>
+                </div>
+
+                <button type="submit" class="btn-submit">Записаться</button>
+
+            </form>
+        </div>
+
+        <div class="return-btn-container" style="margin-top: 40px;">
+            <a href="Site.html" class="btn-outline">← Вернуться на главную</a>
+        </div>
+
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ассистенты врача</title>
+    <link rel="stylesheet" href="cartinki.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <span>Частная клиника · приём строго по записи</span>
+            <span>+6 (767) 676-76-76</span>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <div class="container header-inner">
+            <a href="Site.html" class="logo">
+                <img src="Logo.jpg" alt="Логотип" class="logo-icon">
+                <div class="logo-text">
+                   <strong>ZOMBOSS</strong>
+                    <span>D O C T O R</span>
+                </div>
+            </a>
+            
+            <nav class="main-nav">
+                <a href="#" onclick="toggleWorkText(); return false;">Место работы</a>
+                <a href="perexod.html">Направления</a>
+                <a href="assistenty.html" style="color: #d4b57e;">Ассистенты</a>
+                <a href="#" onclick="toggleContactText(); return false;">Контакты</a>
+            </nav>
+        </div>
+
+        <div id="workInfo" class="dropdown-info">
+            <div class="container">
+                 <p>📍 <strong>Медцентр «Посмертный шанс»</strong> — г. Некрополь, ул. Реанимационная, 13</p>
+                <p>📍 <strong>Клинико-диагностический центр «Санаторий Вечность»</strong> — г. Моргоград, пер. Трансплантационный</p>
+            </div>
+        </div>
+
+        <div id="contactInfo" class="dropdown-info">
+            <div class="container">
+                <p>📞 <strong>Регистратура:</strong> <a href="tel:+79991112233">+9 (876) 543-21-00</a></p>
+                <p>📞 <strong>Справочная служба:</strong> <a href="tel:+79994445566">+1 (234) 567-89-01</a></p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container page-section">
+        <div class="services-head">
+            <h2>Наши ассистенты</h2>
+        </div>
+        
+        <div class="assistants-grid">
+            
+            <div class="assistant-card">
+                <img src="assist1.jpeg" alt="Ассистент 1" class="assistant-photo">
+                <h3>Ганс Штольц</h3>
+                <p>Старший ассистент. Помогает с оформлением документов и подготовкой к приёму врача.</p>
+            </div>
+
+            <div class="assistant-card">
+                <img src="assist2.jpeg" alt="Ассистент 2" class="assistant-photo">
+                <h3>Виктор Пульс</h3>
+                <p>Медбрат. Отвечает за комфорт пациентов и ассистирует при медицинских процедурах.</p>
+            </div>
+
+        </div>
+
+        <div class="return-btn-container">
+            <a href="Site.html" class="btn-outline">← Вернуться на главную</a>
+        </div>
+    </main>
+
+    <script>
+        function toggleWorkText() {
+            var workBlock = document.getElementById("workInfo");
+            var contactBlock = document.getElementById("contactInfo");
+            contactBlock.classList.remove("show");
+            workBlock.classList.toggle("show");
+        }
+
+        function toggleContactText() {
+            var contactBlock = document.getElementById("contactInfo");
+            var workBlock = document.getElementById("workInfo");
+            workBlock.classList.remove("show");
+            contactBlock.classList.toggle("show");
+        }
+    </script>
+
+</body>
+</html>

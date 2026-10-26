@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О враче-терапевте</title>
+    <link rel="stylesheet" href="cartinki.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <span>Частная клиника · приём строго по записи</span>
+            <span>+6 (767) 676-76-76</span>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <div class="container header-inner">
+            <a href="Site.html" class="logo">
+                <img src="Logo.jpg" alt="Логотип" class="logo-icon">
+                <div class="logo-text">
+                    <strong>ZOMBOSS</strong>
+                    <span>D O C T O R</span>
+                </div>
+            </a>
+            
+            <nav class="main-nav">
+                <a href="#" onclick="toggleWorkText(); return false;">Место работы</a>
+                <a href="perexod.html">Направления</a>
+                <a href="assistenty.html">Ассистенты</a>
+                <a href="#" onclick="toggleContactText(); return false;">Контакты</a>
+            </nav>
+        </div>
+
+        <div id="workInfo" class="dropdown-info">
+            <div class="container">
+                <p>📍 <strong>Клиника «ИВАНОВ»</strong> — г. Москва, ул. Ленина, д. 10</p>
+                <p>📍 <strong>Медицинский центр «Здоровье»</strong> — г. Москва, пр-т Мира, д. 55</p>
+            </div>
+        </div>
+
+        <div id="contactInfo" class="dropdown-info">
+            <div class="container">
+                <p>📞 <strong>Регистратура:</strong> <a href="tel:+79991112233">+9 (876) 543-21-00</a></p>
+                <p>📞 <strong>Справочная служба:</strong> <a href="tel:+79994445566">+1 (234) 567-89-01</a></p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container page-section">
+        <div class="about-doctor">
+            <h2>О враче</h2>
+            <p>Зомбосс — врач-терапевт высшей категории. Специализируется на комплексной диагностике, профилактике хронических заболеваний и индивидуальном подборе терапии для пациентов всех возрастов.</p>
+            <p>Регулярно повышает квалификацию, владеет современными методами функциональной диагностики. В своей практике применяет доказательный подход к лечению.</p>
+            
+
+         <a href="Site.html" class="btn-outline">← Вернуться на главную</a>
+        </div>
+    </main>
+
+    <script>
+        function toggleWorkText() {
+            var workBlock = document.getElementById("workInfo");
+            var contactBlock = document.getElementById("contactInfo");
+            contactBlock.classList.remove("show");
+            workBlock.classList.toggle("show");
+        }
+
+        function toggleContactText() {
+            var contactBlock = document.getElementById("contactInfo");
+            var workBlock = document.getElementById("workInfo");
+            workBlock.classList.remove("show");
+            contactBlock.classList.toggle("show");
+        }
+    </script>
+
+</body>
+</html>

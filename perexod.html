@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Направления у терапевта</title>
+    <link rel="stylesheet" href="cartinki.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <span>Частная клиника · приём строго по записи</span>
+            <span>+6 (767) 676-76-76</span>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <div class="container header-inner">
+            <a href="Site.html" class="logo">
+                <img src="Logo.jpg" alt="Логотип" class="logo-icon">
+                <div class="logo-text">
+                 <strong>ZOMBOSS</strong>
+                    <span>D O C T O R</span>
+                </div>
+            </a>
+            
+            <nav class="main-nav">
+                <a href="#" onclick="toggleWorkText(); return false;">Место работы</a>
+                <a href="perexod.html" style="color: #d4b57e;">Направления</a>
+                <a href="assistenty.html">Ассистенты</a>
+                <a href="#" onclick="toggleContactText(); return false;">Контакты</a>
+            </nav>
+        </div>
+
+        <div id="workInfo" class="dropdown-info">
+            <div class="container">
+                <p>📍 <strong>Медцентр «Посмертный шанс»</strong> — г. Некрополь, ул. Реанимационная, 13</p>
+                <p>📍 <strong>Клинико-диагностический центр «Санаторий Вечность»</strong> — г. Моргоград, пер. Трансплантационный</p>
+            </div>
+        </div>
+
+        <div id="contactInfo" class="dropdown-info">
+            <div class="container">
+                <p>📞 <strong>Регистратура:</strong> <a href="tel:+79991112233">+9 (876) 543-21-00</a></p>
+                <p>📞 <strong>Справочная служба:</strong> <a href="tel:+79994445566">+1 (234) 567-89-01</a></p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container page-section">
+        <div class="services-head">
+            <h2>Направления</h2>
+        </div>
+        
+        <div class="cards">
+            <div class="card">
+                <span class="num">01</span>
+                <h3>Терапия</h3>
+                <p>Осмотр, диагностика и лечение распространённых заболеваний, профилактика и наблюдение.</p>
+            </div>
+            
+            <div class="card">
+                <span class="num">02</span>
+                <h3>Кардиология</h3>
+                <p>Контроль работы сердца и сосудов, расшифровка обследований, план наблюдения.</p>
+            </div>
+            
+            <div class="card">
+                <span class="num">03</span>
+                <h3>Офтальмология</h3>
+                <p>Проверка зрения, диагностика состояния глаз и подбор дальнейшей тактики.</p>
+            </div>
+        </div>
+
+        <div class="return-btn-container">
+            <a href="Site.html" class="btn-outline">← Вернуться на главную</a>
+        </div>
+    </main>
+
+    <script>
+        function toggleWorkText() {
+            var workBlock = document.getElementById("workInfo");
+            var contactBlock = document.getElementById("contactInfo");
+            contactBlock.classList.remove("show");
+            workBlock.classList.toggle("show");
+        }
+
+        function toggleContactText() {
+            var contactBlock = document.getElementById("contactInfo");
+            var workBlock = document.getElementById("workInfo");
+            workBlock.classList.remove("show");
+            contactBlock.classList.toggle("show");
+        }
+    </script>
+
+</body>
+</html>
